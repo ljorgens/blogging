@@ -1,0 +1,9 @@
+<%= render "layouts/errors", :object => @comment %>
+
+<%= form_for [@post, @comment] do |f| %>
+	<%= f.label :title %>
+	<%= f.text_field :title %>
+	<%= f.label :body %>
+	<%= f.text_area :body %>
+	<%= f.submit %>
+<% end %>

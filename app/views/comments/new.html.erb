@@ -1,2 +1,6 @@
 <h1>Add a new comment to <%= @post.title %></h1>
-<%= link_to "Back", post_path(@post) %>
+
+<%= render "form" %>
+<br>
+Or go 
+<br><strong><%= link_to "Back", post_path(@post) %></strong>
