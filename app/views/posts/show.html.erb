@@ -7,3 +7,18 @@
 
 <p><%= @post.body %></p>
 
+<% if @post.comments.any? %>
+<h4>Comments:</h4>
+<ul>
+	<% @post.comments.each do |comment| %>
+		<li>
+			<%= link_to comment.title, post_comment_path(@post, comment) %>
+		</li> 
+		<% end %>
+</ul>
+<% else %>
+<p>
+	<%= link_to "Add Week", new_section_week_path(@section) %>
+</p>
+
+<% end %>
