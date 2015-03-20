@@ -1,6 +1,9 @@
 <h1>All Blog Posts!</h1>
+	<a href="posts/new">Make a New Posts!</a>
 	<ul>
 		<% @posts.each do |post| %>
-			<li><%= post.name %></li>
+			<li><%= post.title %></li>
 		<% end %>
 	</ul>
+	
+	
