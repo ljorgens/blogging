@@ -2,7 +2,7 @@
 	<a href="posts/new">Make a New Posts!</a>
 	<ul>
 		<% @posts.each do |post| %>
-			<li><%= post.title %></li>
+			<li><%= link_to post.title, post_path(post) %> --- Time Posted: <%= post.created_at %></li>
 		<% end %>
 	</ul>
 	
