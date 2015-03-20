@@ -8,7 +8,7 @@ class PostsController < ApplicationController
 	end
 	
 	def create
-		@post = Post.new(params[:id])
+		@post = Post.new(params[:post])
 		if @post.save
 			redirect_to "/"
 		else
@@ -32,6 +32,17 @@ class PostsController < ApplicationController
 			redirect_to post_path(@post)
 		else
 			render :edit
+		end
+	end
+	
+	def destroy
+		@post = Post.find(params[:id])
+		if @post.destroy
+			flash[:notice] = "Post Deleted"
+				redirect_to "/"
+		else
+			flash[:notice] = "something went wrong haha"
+			render :show
 		end
 	end
 end

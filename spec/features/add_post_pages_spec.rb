@@ -26,14 +26,4 @@ describe "viewing a blog post" do
 		expect(page).to have_content 'This is so good'
 	end
 end
-describe "editing a blog post" do
-	it "allows user to edit blog post" do
-		post = Post.create(:title => "Another Post", :body => "This is so good")
-		visit posts_path
-		click_on "Another Post"
-		visit post_path(post)
-		click_on "Edit Post"
-		expect(page).to have_content "Begin Editing!"
-	end
-end
 

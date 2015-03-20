@@ -1,6 +1,9 @@
 <h1><%= @post.title %> </h1>
 <a href="/">Go Home</a> Or
 <%= link_to "Edit Post", edit_post_path(@post) %>
+<%= link_to "Delete Post", post_path(@post), 
+											:data => {:confirm => "oh no",
+																:method => "delete"} %>
 
 <p><%= @post.body %></p>
 
