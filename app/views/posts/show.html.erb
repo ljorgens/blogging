@@ -1,1 +1,6 @@
 <h1><%= @post.title %> </h1>
+<a href="/">Go Home</a> Or
+<%= link_to "Edit Post", edit_post_path(@post) %>
+
+<p><%= @post.body %></p>
+

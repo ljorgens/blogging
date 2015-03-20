@@ -1,5 +1,5 @@
 <h1>All Blog Posts!</h1>
-	<a href="posts/new">Make a New Posts!</a>
+	<a href="posts/new">Make a New Post!</a>
 	<ul>
 		<% @posts.each do |post| %>
 			<li><%= link_to post.title, post_path(post) %> --- Time Posted: <%= post.created_at %></li>
