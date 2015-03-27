@@ -1,28 +1,31 @@
-== README
+Personal assessment week 10
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+READ ME! Hello fellow developer!
 
-Things you may want to cover:
+This read me will give you a better understanding of my beat-tracker project and my website.
 
-* Ruby version
+Setup
 
-* System dependencies
+This Setup will only be for MACs because I dont know how to do it for Windows, Sorry PC users!
 
-* Configuration
+Specs: I am using Mac OSX yosemite 10.10.1 and the text editor Sublime text 2 along with the
 
-* Database creation
+terminal using Ruby 4.2 and Rails and the Google Chorme browser.
 
-* Database initialization
+Open the terminal and install the rails gem and then use the command to create a rails app on your desktop with
 
-* How to run the test suite
+the name of your folder being blogging and copy the folders and names of the files in my repository into it.
 
-* Services (job queues, cache servers, search engines, etc.)
+You now should have a blogging folder with 10 folders and 4 files (not including the README).
 
-* Deployment instructions
+Make sure all the folders have the appropriate files and folders inside them with the correct endings.
 
-* ...
+To begin you will need to open a rails server in the terminal as well as a postgres database.
 
+Now go to localhost:3000 and you should see my app there.
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+You are ready to go! You should now be able to enter blog posts and comment on them!
+
+License None
+
+Lee Flischmens
