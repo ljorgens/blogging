@@ -19,10 +19,9 @@ describe "the add a post process"  do
 end
 describe "viewing a blog post" do
 	it "allows you to view blog post" do
-		post = Post.create(:title => "Another Post", :body => "This is so good")
+		post = FactoryGirl.create(:post)
 		visit posts_path
 		click_on "Another Post"
-		visit post_path(post)
 		expect(page).to have_content 'This is so good'
 	end
 end
