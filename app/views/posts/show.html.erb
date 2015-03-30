@@ -5,6 +5,8 @@
 											:data => {:confirm => "oh no",
 																:method => "delete"} %>
 
+
+<p><%= image_tag @post.avatar.url(:medium) %></p>
 <p><%= @post.body %></p>
 
 <% if @post.comments.any? %>

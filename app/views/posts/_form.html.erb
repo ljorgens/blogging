@@ -3,6 +3,10 @@
 <%= form_for @post do |f| %>
 	<%= f.label :title %>
 	<%= f.text_field :title %>
+	<br>
+	<%= f.label "Image for Post" %>
+	<%= f.file_field :avatar %>
+	<br>
 	<%= f.label :body %>
 	<%= f.text_area :body %>
 	<%= f.submit %>
