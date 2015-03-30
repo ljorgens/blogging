@@ -1,4 +1,8 @@
 <h1>All Blog Posts!</h1>
+<% if current_user %>
+<h3 class= "top-right">This is your personal avatar that you created at login!</h3>
+  <%= image_tag current_user.avatar.url(:thumb) %>
+<% end %>
 	<a href="posts/new">Make a New Post!</a>
 	<ul>
 		<% @posts.each do |post| %>
