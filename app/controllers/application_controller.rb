@@ -12,5 +12,6 @@ class ApplicationController < ActionController::Base
   	devise_parameter_sanitizer.for(:sign_up) << :username
   	devise_parameter_sanitizer.for(:sign_up) << :email
   	devise_parameter_sanitizer.for(:sign_up) << :avatar
+    devise_parameter_sanitizer.for(:sign_up) << :user_number
   end
 end

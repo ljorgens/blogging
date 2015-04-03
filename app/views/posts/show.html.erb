@@ -18,12 +18,12 @@
 		</li> 
 		<% end %>
 </ul>
-	<%= link_to "Add Another Comment", new_post_comment_path(@post) %>
+	<%= link_to "Add Another Comment", new_post_comment_path(@post), id: "new_comment", remote: true %>
 
 <% else %>
 <p>
 	There are no Comments!  Add a comment below!
-	<%= link_to "Add Comment", new_post_comment_path(@post) %>
+	<%= link_to "Add Comment", new_post_comment_path(@post), id: "new_comment", remote: true %>
 </p>
 
 <% end %>

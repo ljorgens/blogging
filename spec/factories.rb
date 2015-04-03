@@ -3,6 +3,7 @@ FactoryGirl.define do
 		username('fred')
 		email('fred@fred.com')
 		password('fredster')
+		user_number("7073371418")
 	end
 	factory(:post) do
 		title('Another Post')

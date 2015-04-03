@@ -1,5 +1,6 @@
 class User < ActiveRecord::Base
 	validates :username, :presence => true
+	validates :user_number, :presence => true
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
