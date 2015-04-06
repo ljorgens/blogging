@@ -9,7 +9,10 @@ class CommentsController < ApplicationController
 		@comment = @post.comments.new(params[:comment])
 		if @comment.save
 			flash[:notice] = "Comment added!"
-			redirect_to post_path(@post) 
+			respond_to do |format|
+				format.html { redirect_to post_path(@post) }
+				format.js
+			end
 		else
 			render :new
 		end
@@ -49,6 +52,6 @@ class CommentsController < ApplicationController
 	
 	private
 		def comment_params
-			params.require(:comment).permit(:title, :body, :post_id)
+			params.require(:comment).permit(:title, :body, :post_id, :user_id)
 		end
 end

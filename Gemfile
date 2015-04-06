@@ -19,9 +19,8 @@ gem 'bootstrap_form'
 gem 'bootswatch-rails'
 gem 'rest-client'
 gem 'high_voltage', '~> 2.2.1'
-gem 'paperclip', '~> 4.2'
+gem 'paperclip'
 gem 'twilio-ruby'
-
 
 group :development, :test do
   gem 'dotenv-rails'
@@ -37,6 +36,9 @@ group :development, :test do
   gem 'selenium-webdriver'
   gem 'factory_girl_rails'
   gem 'launchy'
+  gem 'poltergeist'
+  gem 'letter_opener'
+
 end
 
 group :production do
