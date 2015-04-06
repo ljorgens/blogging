@@ -9,6 +9,8 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'devise'
 gem 'paperclip', '~> 4.2'
+gem 'twilio-ruby'
+gem 'rest-client'
 
 group :development do
   gem 'byebug'
@@ -20,6 +22,8 @@ end
 group :test, :development do
   gem 'rspec-rails'
   gem 'capybara'
+  gem 'pry'
+  gem 'dotenv-rails'
 end
 
 group :test do

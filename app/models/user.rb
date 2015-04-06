@@ -1,4 +1,6 @@
 class User < ActiveRecord::Base
+	has_many :posts
+	has_many :comments
 	validates :username, :presence => true
 	validates :user_number, :presence => true
   # Include default devise modules. Others available are:

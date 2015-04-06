@@ -4,5 +4,7 @@ Rails.application.routes.draw do
 
   resources :posts do
   	resources :comments, :except => [:index]
+  	
+  resources :messages, only: [:index, :new]
   end
 end
