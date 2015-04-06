@@ -22,7 +22,9 @@ Make sure all the folders have the appropriate files and folders inside them wit
 
 To begin you will need to open a rails server in the terminal as well as a postgres database.
 
-Now go to localhost:3000 and you should see my app there.
+Now go to localhost:3000 and you should see my app there.  I added paperclip so I am having 
+
+trouble with the heroku site right now but locally it should be fine.
 
 You are ready to go! You should now be able to enter blog posts and comment on them!
 
